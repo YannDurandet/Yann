@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yann Durandet</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="ydLogoBlack.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+  <section id="landingPage">
+    <nav>
+      <figure>
+        <img id="personalLogo" src="assets/ydLogoWhite.png" alt="LOGO YD">
+      </figure>
+      <ul class="navLinkList">
+        <li class="navLink">
+          <a href="#about" class="navLinkAnchor linkHoverEffect linkHoverEffectBlack">About</a>
+        </li>
+        <li class="navLink">
+          <a href="#gallery" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Gallery</a>
+        </li>
+        <li class="navLink">
+          <a href="#projects" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Projects</a>
+        </li>
+        <li class="navLink">
+          <a href="#contact" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Contact</a>
+        </li>
+        <li class="navLink click" onclick="toggleContrast()">
+          <a href="#" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">
+            <i class="fas fa-adjust"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="headerContent">
+        <h1 class="title">Hey</h1>
+        <h1 class="title orange">I'm Yann.</h1>
+        <p class="headerParagraph">
+          I'm an Aspiring <span class="orange">French Frontend Web Developer</span>. You can read more <a href="#about" class="orange click linkHoverEffect linkHoverEffectOrange"><b>about me</b></a>.
+        </p>
+        <div class="socialList">
+          <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://instagram.com/yann.drndt" target="_blank" class="socialLink click">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://github.com/YannDurandet" target="_blank" class="socialLink click">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="socialLink click">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+  </section>
+  <section id="about">
+    <div class="container">
+        <h2 class="sectionTitle">
+          Here' a bit more <span class="orange">about me</span>.
+        </h2>
+        <div class="aboutLayout">
+          <div class="aboutParagraphHolder">
+          <p class="aboutParagraph">  I am a 19 year old junior Front-end web developer, based in Rouen, Normandy. I am currently learning web development & design, and have a strong passion for photography.</p><br>
+          <p class="aboutParagraph">  I can speak fluent French, English & German, and am learning Italian at the moment.</p><br>
+          <p class="aboutParagraph">  I also practice Self-Improvment through physical & mental exercises, i intend to work hard on myself and build discipline, contrarily to most of my generation, i avoid easy-to-get dopamine from instant-gratification activities such as social media, junk food or video games.</p> 
+          </div>
+          <figure class="aboutImgWrapper">
+            <img src="assets/workingout.jpg" class="aboutImg"alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="gallery">
+    <div class="container">
+      <div class="galleryRow">
+        <h1 class="sectionTitle">
+          This is my photography <span class="orange">gallery</span>
+        </h1>
+        <ul class="galleryLayout">
+          <li class="galleryItem">
+            <img src="assets/Frost.png" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/bundestag.png" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/pistache.jpg" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/leVide.jpg" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/capi.jpg" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/arbre.png" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/fleur.jpg" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/jaune.jpg" class="galleryImg" alt="">
+          </li>
+          <li class="galleryItem">
+            <img src="assets/velo.jpg" class="galleryImg" alt="">
+          </li>
+        </ul>
+        <h3 class="sectionSubtitle">
+          You can always explore more on my <a href="https://instagram.com/yann.drndt" class="linkHoverEffect linkHoverEffectOrange"><b class="orange">Instagram</b></a>
+        </h3>
+      </div>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="sectionTitle">
+          Here are some of my <span class="orange">projects</span>
+        </h1>
+        <ul class="projectList">
+          <li class="project">
+            <div class="projectWrapper">
+              <img src="assets/project1.jpg" class="projectImg" alt="">
+              <div class="projectWrapperBackground"></div>
+              <div class="projectDescription">
+                <h3 class="projectdescriptionTitle">
+                  Sadly, there is no project here yet.
+                </h3>
+                <h4 class="projectDescriptionSubtitle">
+                  <span class="orange">HTML, CSS, JavaScript</span>
+                </h4>
+                <p class="projectDescriptionParagraph">
+                  I am currently working on some projects,
+                  However, if you like the photo behind, it's not mine, it was made by
+                  <a href="https://unsplash.com/@tokeller"
+                    class="navLinkOrange linkHoverEffect linkHoverEffectOrangeSmall">Tobias Keller</a>
+                  on
+                  <a href="https://unsplash.com/s/photos/new-zealand"
+                    class="navLinkOrange linkHoverEffect linkHoverEffectOrangeSmall">Unsplash.</a>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footerRow">
+        <a href="#" class="footerAnchor">
+          <figure class="footerLogo">
+            <img src="assets/ydLogoWhite.png" class="footerLogoImg" alt="LOGO YD">
+          </figure>
+          <span class="footerLogoPopper">
+            Top
+            <i class="fas fa-arrow-up"></i>
+          </span>
+        </a>
+        <div class="footerSocialList">
+          <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Youtube</a>
+          <a href="https://instagram.com/yann.drndt" target="_blank" class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Instagram</a>
+          <a href="https://github.com/YannDurandet" target="_blank" class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">GitHub</a>
+          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="  footerSocialLink linkHoverEffect linkHoverEffectWhite">LinkedIn</a>
+        </div>
+        <div class="footerCopyright">
+          Copyright &copy; 2022 Yann Durandet</div>
+        </div>
+      </div>
+  </footer>
+</body>
+
+</html>

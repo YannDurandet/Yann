@@ -1,0 +1,591 @@
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    GENERAL 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  background-color: rgb(245, 245, 245);
+  transition: all 300ms ease;
+}
+
+input, textarea {
+  width: 100%;
+  background-color: #242424;
+  color: #fff;
+  outline: none;
+  border: 3px solid #c0c4cc;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 40px;
+  transition: all 300ms ease;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input:hover, textarea:hover {
+  border-color: #dcdfe6;
+}
+
+input:focus, textarea:focus {
+  border-color: #f06449;
+}
+
+.container {
+  padding: 50px 0;
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.galleryRow {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.click {
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.click:hover {
+  transform: scale(1.1);
+}
+
+.click:active {
+  transform: scale(0.8);
+}
+
+.title {
+  font-size: 120px;
+  margin-bottom: 12px;
+  text-align: left;
+  line-height: 1;
+}
+
+.orange {
+  color: #f06449 !important;
+}
+
+.linkHoverEffect {
+  position: relative;
+}
+
+.linkHoverEffect:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  height: 3px;
+  width: 0;
+  right: 0;
+  transition: all 300ms ease;
+}
+
+.linkHoverEffectWhite:after {
+  background-color: #fff;
+}
+
+.linkHoverEffectBlack:after {
+  background-color: #242424;
+}
+
+.linkHoverEffectOrange:after{
+  background-color:#f06449;
+  height: 4px;
+}
+.linkHoverEffectOrangeSmall:after{
+  background-color:#f06449;
+  height: 2px;
+}
+
+.linkHoverEffect:hover:after {
+  left: 0;
+  width: 100%;
+}
+
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    LANDING PAGE 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+#landingPage {
+  height: 100vh;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+  padding: 0 30px;
+}
+
+.headerParagraph {
+  font-size: 24px;
+  line-height: 2;
+  max-width: 450px;
+}
+
+.socialList {
+  margin-top: 16px;
+  display: flex;
+}
+
+.socialLink {
+  background-color: #f06449;
+  color: white;
+  padding: 6px;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    NAVIGATION
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width:220vh;
+  margin: 0 auto;
+  padding: 0 100px;
+  height: 80px;
+  background-color: #00000007;
+}
+
+#personalLogo {
+  width: 100px;
+  height: 100px;
+  filter: invert(1);
+}
+
+.navLinkList {
+  display: flex;
+}
+
+.navLink {
+  margin: 0 12px;
+}
+
+.navLinkAnchor {
+  font-size: 16px;
+  color: #242424;
+  font-weight: 700;
+}
+
+.navLinkOrange {
+  font-size: 16px;
+  color: #f06449;
+  font-weight: 700;
+}
+.fa-adjust {
+  font-size: 20px;
+}
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    ABOUT
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+#about {
+  background-color: rgb(231, 231, 231);
+  height: 101vh;
+}
+.aboutLayout {
+  display: flex;
+  justify-content: center;
+}
+.aboutParagraphHolder{
+  display: flex;
+}
+
+.aboutParagraphHolder {
+  display:block;
+  width: 25%;
+  text-align: justify;
+  margin-right: 6%;
+}
+.aboutParagraph {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.aboutImgWrapper {
+  display: flex;
+  position: relative;
+  align-self: auto;
+  width: 25%;
+  overflow-y: hidden;
+  border-radius: 20px;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+}
+
+.aboutImg {
+  max-width: 100%;
+}
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    GALLERY
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+#gallery {
+  padding-bottom: 40px;
+}
+.galleryLayout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:flex-start;
+  justify-content:center;
+}
+
+.galleryItem {
+  display: block;
+  position: relative;
+  align-self: auto;
+  width: 29%;
+  max-height: 70vh;
+  margin: 10px 10px;
+  overflow-y: hidden;
+}
+
+.galleryImg {
+  max-width: 100%;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    PROJECTS
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+#projects {
+  background-color: rgb(231, 231, 231);
+  padding-bottom: 70px;
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 60px;
+}
+
+.projectImg {
+  width: 100%;
+  height: 100%;
+  position: center;
+  transition: all 600ms ease;
+}
+
+.projectWrapper {
+  position: relative;
+  border-radius: 20px;
+  max-height:70vh;
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  overflow: hidden;
+}
+
+.projectWrapper:hover .projectDescription {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.projectWrapper:hover .projectImg {
+  transform: scale(1.07);
+  filter: blur(15px);
+}
+
+.projectDescription {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  transform: translateY(100%);
+  opacity: 0;
+  transition: opacity 300ms, transform 450ms ease;
+  color: white;
+  max-width: 550px;
+}
+
+.projectWrapper:hover .projectWrapperBackground {
+  opacity: 0.7; 
+  visibility: visible;
+}
+
+.projectWrapperBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff4d;
+  opacity: 0; 
+  transition: all 450ms ease;
+  visibility: hidden;
+}
+
+.projectdescriptionTitle {
+  font-size: 40px;
+}
+
+.projectDescriptionSubtitle {
+  margin-top: 8px;
+}
+
+.projectDescriptionLink {
+  color: white;
+  font-size: 20px;
+  margin-right: 16px;
+}
+
+.projectDescriptionParagraph {
+  margin: 16px 0;
+}
+
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    FOOTER
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+footer {
+  position: relative;
+  background-color: #131313;
+  display: flex;
+  padding: 0 0;
+}
+
+.footerRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerLogoImg {
+  width: 140px;
+}
+
+.footerSocialList {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+  margin: 28px 0;
+}
+
+.footerSocialLink,
+.footerCopyright {
+  color: white;
+}
+
+.footerLogoPopper {
+  position: absolute;
+  top: 0px;
+  font-weight: 700;
+  opacity: 0;
+  transition: all 300ms ease;
+  color: white;
+}
+
+.footerAnchor {
+  position: relative;
+}
+
+.footerAnchor:hover .footerLogoPopper {
+  transform: translateX(20px);
+  opacity: 1;
+}
+
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    DARK THEME
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+
+.dark-theme .title,
+.dark-theme .sectionTitle,
+.dark-theme .section__sub-title,
+.dark-theme .navLinkAnchor,
+.dark-theme .fa-adjust,
+.dark-theme .headerParagraph,
+.dark-theme .sectionSubtitle,
+.dark-theme .aboutParagraph {
+  color: white;
+}
+.dark-theme nav,
+.dark-theme #about,
+.dark-theme #projects{
+  background-color: black;
+}
+.dark-theme section {
+  background-color: #242424;
+}
+
+.dark-theme #personalLogo {
+  filter: none;
+}
+
+.dark-theme .projectWrapperBackground{
+  background-color: #0000004d;
+}
+
+.dark-theme .socialLink {
+  color: black;
+}
+/* 
+==============================================================================================
+==============================================================================================
+==============================================================================================
+                                    RESPONSIVE
+==============================================================================================
+==============================================================================================
+==============================================================================================
+*/
+@media (max-width: 768px) {
+  .title {
+    font-size: 80px;
+  }
+  .headerParagraph {
+    font-size: 20px;
+  }
+  .galleryItem {
+    width: 48%;
+    margin: 1%;
+    height: 319px;
+  }
+  nav{
+    padding: 0 20px;
+  }
+  .aboutParagraph {
+    font-size: 12px;
+  }
+  .aboutImg {
+    visibility: hidden;
+  }
+  .aboutImgWrapper {
+    visibility: hidden;
+  }
+  .aboutLayout {
+    display: list-item;
+    list-style: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 52px;
+  }
+  .headerParagraph {
+    font-size: 18px;
+  }
+  .navLink:first-child {
+    display: none;
+  }
+  .projectDescriptionParagraph {
+    display: none;
+  }
+  .project__description {
+    left: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .projectDescriptionSubtitle {
+    margin-bottom: 8px;
+  }
+}
