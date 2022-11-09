@@ -442,8 +442,15 @@ nav {
   background-color: white;
   border-radius: 20px;
   padding: 1px 7px;
+  margin-bottom: 4px;
 }
 
+.projectDescriptionTagsReversed{
+  color: white;
+  background-color: #f06449;
+  border-radius: 20px;
+  padding: 1px 7px;
+}
 /* 
 ==============================================================================================
 ==============================================================================================
