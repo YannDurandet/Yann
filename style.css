@@ -41,7 +41,7 @@ section {
 /*========================================MAIN CLASSES========================================*/
 
 .container {
-  padding: 50px 0;
+  padding: 0px 0;
   width: 100%;
 }
 
@@ -132,8 +132,8 @@ nav {
 }
 
 #personalLogo {
-  width: 100px;
-  height: 100px;
+  width: 170px;
+  height: 170px;
   filter: invert(none);
 }
 
