@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yann Durandet</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="ydLogoBlack.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
 </head>
@@ -16,7 +15,7 @@
   <section id="landingPage">
     <nav>
       <figure>
-        <img id="personalLogo" src="assets/YDLogoTricolorInline_Plan de travail 1.svg" alt="LOGO YD">
+        <img id="personalLogo" src="assets/YDLogoTricolorInline.svg" alt="LOGO YD">
       </figure>
       <ul class="navLinkList">
         <li class="navLink">
@@ -32,7 +31,9 @@
           <a href="#projects" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Projects</a>
         </li>
         <li class="navLink">
-          <a href="mailto:durandet.yann@gmail.com" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Contact</a>
+          <button class="navLinkButton">
+            <a href="mailto:durandet.yann@gmail.com" class=" navLinkAnchor navLinkAnchorWhite click">Contact</a>
+          </button>
         </li>
         <li class="navLink click" onclick="toggleContrast()">
           <a href="#" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">
@@ -44,10 +45,10 @@
     <header class="header">
       <div class="headerContent">
         <h1 class="title">Hey</h1>
-        <h1 class="title orange">I'm Yann.</h1>
+        <h1 class="title blue">I'm Yann.</h1>
         <p class="headerParagraph">
-          I'm an Aspiring <span class="orange">French Frontend Web Developer</span>. You can read more <a href="#about"
-            class="orange click linkHoverEffect linkHoverEffectOrange"><b>about me</b></a>.
+          I'm an Aspiring <span class="blue">French Frontend Web Developer</span>. You can read more <a href="#about"
+            class="blue click linkHoverEffect linkHoverEffectBlue"><b>about me</b></a>.
         </p>
         <div class="socialList">
           <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click">
@@ -69,7 +70,7 @@
   <section id="about">
     <div class="container">
       <h2 class="sectionTitle">
-        Here' a bit more <span class="orange">about me</span>.
+        Here' a bit more <span class="blue">about me</span>.
       </h2>
       <div class="aboutLayout">
         <div class="aboutParagraphHolder">
@@ -91,7 +92,7 @@
   <section id="skills">
     <div class="container">
       <div class="row">
-        <h1 class="sectionTitle">This is my <span class="orange">Skill Set</span></h1>
+        <h1 class="sectionTitle">This is my <span class="blue">Skill Set</span></h1>
         <ul class="skillList">
           <li class="skill">
             <figure class="skillImgHolder">
@@ -173,14 +174,6 @@
             </figure>
             <span class="skillName">Figma</span>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Adobe_Premiere_Pro_Logo.svg"
-                alt="PR Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Premiere pro</span>
-          </li>
         </ul>
       </div>
     </div>
@@ -189,7 +182,7 @@
     <div class="container">
       <div class="row">
         <h1 class="sectionTitle">
-          Here are some of my <span class="orange">projects</span>
+          Here are some of my <span class="blue">projects</span>
         </h1>
         <ul class="projectList">
           <li class="project">
@@ -201,7 +194,7 @@
                   Yann Designs
                 </h3>
                 <h4 class="projectDescriptionSubtitle">
-                  <span class="orange projectDescriptionTags">HTML - CSS - JS</span>
+                  <span class="blue projectDescriptionTags">HTML - CSS - JS</span>
                 </h4>
                 <h4 class="projectDescriptionSubtitle">
                   <span class="projectDescriptionTagsReversed">Status : Finished</span>
@@ -232,7 +225,7 @@
                   Freneuse-Sur-Risle
                 </h3>
                 <h4 class="projectDescriptionSubtitle">
-                  <span class="orange projectDescriptionTags">WordPress</span>
+                  <span class="blue projectDescriptionTags">WordPress</span>
                 </h4>
                 <h4 class="projectDescriptionSubtitle">
                   <span class="projectDescriptionTagsReversed">Status : Under Development</span>
@@ -259,7 +252,7 @@
                   Solo Poster
                 </h3>
                 <h4 class="projectDescriptionSubtitle">
-                  <span class="orange projectDescriptionTags">Adobe Illustrator / Photoshop</span>
+                  <span class="blue projectDescriptionTags">Adobe Illustrator / Photoshop</span>
                 </h4>
                 <h4 class="projectDescriptionSubtitle">
                   <span class="projectDescriptionTagsReversed">Status : Finished</span>
@@ -284,7 +277,7 @@
     <div class="container">
       <div class="galleryRow">
         <h1 class="sectionTitle">
-          This is my photography <span class="orange">gallery</span>
+          This is my photography <span class="blue">gallery</span>
         </h1>
         <ul class="galleryLayout">
           <li class="galleryItem">
@@ -297,7 +290,7 @@
             <img src="assets/pistache.jpg" class="galleryImg" alt="">
           </li>
           <li class="galleryItem">
-            <img src="assets/capi.jpg" class="galleryImg" alt="">
+            <img src="assets/capi.png" class="galleryImg" alt="">
           </li>
           <li class="galleryItem">
             <img src="assets/arbre.png" class="galleryImg" alt="">
@@ -308,7 +301,7 @@
         </ul>
         <h3 class="sectionSubtitle">
           You can always explore more on my <a href="https://instagram.com/yann.drndt"
-            class="linkHoverEffect linkHoverEffectOrange"><b class="orange">Instagram</b></a>
+            class="linkHoverEffect linkHoverEffectBlue"><b class="blue">Instagram</b></a>
         </h3>
       </div>
     </div>
