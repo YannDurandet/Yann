@@ -1,286 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yann Durandet</title>
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Portfolio Yann Durandet Web Developer Photographer">
-</head>
-
-<body>
-  <section id="landingPage">
-    <nav>
-      <figure>
-        <img id="personalLogo" src="assets/YDLogoTricolorInline.svg" alt="LOGO YD">
-      </figure>
-      <ul class="navLinkList">
-        <li class="navLink">
-          <a href="#about" class="navLinkAnchor linkHoverEffect linkHoverEffectBlack">About</a>
-        </li>
-        <li class="navLink">
-          <a href="#skills" class="navLinkAnchor linkHoverEffect linkHoverEffectBlack">Skillset</a>
-        </li>
-        <li class="navLink">
-          <a href="#gallery" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Gallery</a>
-        </li>
-        <li class="navLink">
-          <a href="#projects" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Projects</a>
-        </li>
-        <li class="navLink">
-          <button class="navLinkButton">
-            <a href="mailto:durandet.yann@gmail.com" class=" navLinkAnchor navLinkAnchorWhite click">Contact</a>
-          </button>
-        </li>
-        <li class="navLink click" onclick="toggleContrast()">
-          <a href="#" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack" alt="DarkMode">
-            <i class="fas fa-adjust"></i><p style="display:none">Toggle Dark Mode</p>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <header class="header">
-      <div class="headerContent">
-        <h1 class="title">Hey</h1>
-        <h1 class="title blue">I'm Yann.</h1>
-        <p class="headerParagraph">
-          I'm an Aspiring <span class="blue">French Frontend Web Developer</span>. You can read more <a href="#about"
-            class="blue click linkHoverEffect linkHoverEffectBlue"><b>about me</b></a>.
-        </p>
-        <div class="socialList">
-          <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click" alt="YTB">
-            <i class="fab fa-youtube"></i><p style="display:none">Youtube</p>
-          </a>
-          <a href="https://instagram.com/yann.drndt" target="_blank" class="socialLink click" alt="IG">
-            <i class="fab fa-instagram"></i><p style="display:none">Instagram</p>
-          </a>
-          <a href="https://github.com/YannDurandet" target="_blank" class="socialLink click" alt="GH">
-            <i class="fab fa-github"></i><p style="display:none">GitHub</p>
-          </a>
-          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="socialLink click" alt="LI">
-            <i class="fab fa-linkedin"></i><p style="display:none">LinkedIn</p>
-          </a>
-        </div>
-      </div>
-    </header>
-  </section>
-  <section id="about">
-    <div class="container">
-      <h2 class="sectionTitle">
-        Here' a bit more <span class="blue">about me</span>.
-      </h2>
-      <div class="aboutLayout">
-        <div class="aboutParagraphHolder">
-          <p class="aboutParagraph"> I am a 19 year old junior Front-end web developer, based in Rouen, Normandy. I am
-            currently learning web development & design, and have a strong passion for photography.</p><br>
-          <p class="aboutParagraph"> I can speak fluent French, English & German, and am learning Italian at the moment.
-          </p><br>
-          <p class="aboutParagraph"> I also practice Self-Improvment through physical & mental exercises, i intend to
-            work hard on myself and build discipline, contrarily to most of my generation, i avoid easy-to-get dopamine
-            from instant-gratification activities such as social media, junk food or competitive video games.</p>
-        </div>
-        <figure class="aboutImgWrapper">
-          <img src="assets/workingout.jpg" class="aboutImg" alt="shadow-self">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yann Durandet</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portfolio Yann Durandet Web Developer Photographer">
+  </head>
+  <body>
+    <section id="landingPage">
+      <nav>
+        <figure>
+          <img id="personalLogo" src="assets/YDLogoTricolorInline.svg" alt="LOGO YD">
         </figure>
-      </div>
-    </div>
-    </div>
-  </section>
-  <section id="skills">
-    <div class="container">
-      <div class="row">
-        <h1 class="sectionTitle">This is my <span class="blue">Skill Set</span></h1>
-        <ul class="skillList">
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg"
-                alt="FR Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">French</span>
+        <ul class="navLinkList">
+          <li class="navLink">
+            <a href="#about" class="navLinkAnchor linkHoverEffect linkHoverEffectBlack">About</a>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
-                alt="EN Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">English</span>
+          <li class="navLink">
+            <a href="#skills" class="navLinkAnchor linkHoverEffect linkHoverEffectBlack">Skillset</a>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
-                alt="DE Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">German</span>
+          <li class="navLink">
+            <a href="#gallery" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Gallery</a>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"
-                alt="IT Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Italian</span>
+          <li class="navLink">
+            <a href="#projects" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack">Projects</a>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt="Html Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">HTML</span>
+          <li class="navLink">
+            <button class="navLinkButton">
+              <a href="mailto:durandet.yann@gmail.com" class=" navLinkAnchor navLinkAnchorWhite click">Contact</a>
+            </button>
           </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
-                alt="CSS Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">CSS</span>
-          </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png"
-                alt="JS Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Javascript</span>
-          </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png"
-                alt="PS Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Photoshop</span>
-          </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/6/66/Illustrator_CC_icon.png"
-                alt="AI Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Illustrator</span>
-          </li>
-          <li class="skill">
-            <figure class="skillImgHolder">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
-                alt="FG Logo" class="skillImg" />
-            </figure>
-            <span class="skillName">Figma</span>
+          <li class="navLink click" onclick="toggleContrast()">
+            <a href="#" class=" navLinkAnchor linkHoverEffect linkHoverEffectBlack" alt="DarkMode">
+              <i class="fas fa-adjust"></i><p style="display:none">Toggle Dark Mode</p>
+            </a>
           </li>
         </ul>
+      </nav>
+      <header class="header">
+        <div class="headerContent">
+          <h1 class="title">Hey</h1>
+          <h1 class="title blue">I'm Yann.</h1>
+          <p class="headerParagraph">
+            I'm an Aspiring <span class="blue">French Frontend Web Developer</span>. You can read more <a href="#about"
+              class="blue click linkHoverEffect linkHoverEffectBlue"><b>about me</b></a>.
+          </p>
+          <div class="socialList">
+            <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click" alt="YTB">
+              <i class="fab fa-youtube"></i><p style="display:none">Youtube</p>
+            </a>
+            <a href="https://instagram.com/yann.drndt" target="_blank" class="socialLink click" alt="IG">
+              <i class="fab fa-instagram"></i><p style="display:none">Instagram</p>
+            </a>
+            <a href="https://github.com/YannDurandet" target="_blank" class="socialLink click" alt="GH">
+              <i class="fab fa-github"></i><p style="display:none">GitHub</p>
+            </a>
+            <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="socialLink click" alt="LI">
+              <i class="fab fa-linkedin"></i><p style="display:none">LinkedIn</p>
+            </a>
+          </div>
+        </div>
+      </header>
+    </section>
+    <section id="about">
+      <div class="container">
+        <h2 class="sectionTitle">
+          Here' a bit more <span class="blue">about me</span>.
+        </h2>
+        <div class="aboutLayout">
+          <div class="aboutParagraphHolder">
+            <p class="aboutParagraph"> I am a 19 year old junior Front-end web developer, based in Rouen, Normandy. I am
+              currently learning web development & design, and have a strong passion for photography.</p><br>
+            <p class="aboutParagraph"> I can speak fluent French, English & German, and am learning Italian at the moment.
+            </p><br>
+            <p class="aboutParagraph"> I also practice Self-Improvment through physical & mental exercises, i intend to
+              work hard on myself and build discipline, contrarily to most of my generation, i avoid easy-to-get dopamine
+              from instant-gratification activities such as social media, junk food or competitive video games.</p>
+          </div>
+          <figure class="aboutImgWrapper">
+            <img src="assets/workingout.jpg" class="aboutImg" alt="shadow-self">
+          </figure>
+        </div>
       </div>
-    </div>
-  </section>
-  <section id="projects">
-    <div class="container">
-      <div class="row">
-        <h1 class="sectionTitle">
-          Here are some of my <span class="blue">projects</span>
-        </h1>
-        <ul class="projectList">
-          <li class="project">
-            <div class="projectWrapper">
-              <img src="assets/design.jpg" class="projectImg" alt="Image de projet">
-              <div class="projectWrapperBackground"></div>
-              <div class="projectDescription">
-                <h2 class="projectdescriptionTitle">
-                  Yann Designs
-                </h2>
-                <h3 class="projectDescriptionSubtitle">
-                  <span class="blue projectDescriptionTags">HTML - CSS - JS</span>
-                </h3>
-                <h3 class="projectDescriptionSubtitle">
-                  <span class="projectDescriptionTagsReversed">Status : Finished</span>
-                </h3>
-                <p class="projectDescriptionParagraph">
-                  To gain more experience and as a school project, I started to create a website to sell services &
-                  guides for building in Minecraft. I spent most of my teenage years playing this game and creating
-                  builds with it, which is why when tasked to create a "facade" kind of Website, I chose to make one
-                  about a subject in which I already have plenty of experience & skills.
-                </p>
-                <div class="socialList">
-                  <a href="https://yanndurandet.github.io/YannDesigns/" target="_blank" class="socialLink click" alt="LINK">
-                    <i class="fa-solid fa-up-right-from-square"></i><p style="display:none">Link</p>
-                  </a>
-                  <a href="https://github.com/YannDurandet/YannDesigns" target="_blank" class="socialLink click" alt="GH">
-                    <i class="fab fa-github"></i><p style="display:none">GitHub</p>
-                  </a>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <h1 class="sectionTitle">This is my <span class="blue">Skill Set</span></h1>
+          <ul class="skillList">
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg"
+                  alt="FR Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">French</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg"
+                  alt="EN Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">English</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"
+                  alt="DE Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">German</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"
+                  alt="IT Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">Italian</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                  alt="Html Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">HTML</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg"
+                  alt="CSS Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">CSS</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/7/73/Javascript-736400_960_720.png"
+                  alt="JS Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">Javascript</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/2/20/Photoshop_CC_icon.png"
+                  alt="PS Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">Photoshop</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/6/66/Illustrator_CC_icon.png"
+                  alt="AI Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">Illustrator</span>
+            </li>
+            <li class="skill">
+              <figure class="skillImgHolder">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg"
+                  alt="FG Logo" class="skillImg" />
+              </figure>
+              <span class="skillName">Figma</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="container">
+        <div class="row">
+          <h1 class="sectionTitle">
+            Here are some of my <span class="blue">projects</span>
+          </h1>
+          <ul class="projectList">
+            <li class="project">
+              <div class="projectWrapper">
+                <img src="assets/design.jpg" class="projectImg" alt="Image de projet">
+                <div class="projectWrapperBackground"></div>
+                <div class="projectDescription">
+                  <h2 class="projectdescriptionTitle">
+                    Yann Designs
+                  </h2>
+                  <h3 class="projectDescriptionSubtitle">
+                    <span class="blue projectDescriptionTags">HTML - CSS - JS</span>
+                  </h3>
+                  <h3 class="projectDescriptionSubtitle">
+                    <span class="projectDescriptionTagsReversed">Status : Finished</span>
+                  </h3>
+                  <p class="projectDescriptionParagraph">
+                    To gain more experience and as a school project, I started to create a website to sell services &
+                    guides for building in Minecraft. I spent most of my teenage years playing this game and creating
+                    builds with it, which is why when tasked to create a "facade" kind of Website, I chose to make one
+                    about a subject in which I already have plenty of experience & skills.
+                  </p>
+                  <div class="socialList">
+                    <a href="https://yanndurandet.github.io/YannDesigns/" target="_blank" class="socialLink click" alt="LINK">
+                      <i class="fa-solid fa-up-right-from-square"></i><p style="display:none">Link</p>
+                    </a>
+                    <a href="https://github.com/YannDurandet/YannDesigns" target="_blank" class="socialLink click" alt="GH">
+                      <i class="fab fa-github"></i><p style="display:none">GitHub</p>
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="gallery">
-    <div class="container">
-      <div class="galleryRow">
-        <h1 class="sectionTitle">
-          This is my photography <span class="blue">gallery</span>
-        </h1>
-        <ul class="galleryLayout">
-          <li class="galleryItem">
-            <img src="assets/Frost.jpg" class="galleryImg" alt="snow flakes">
-          </li>
-          <li class="galleryItem">
-            <img src="assets/bundestag.jpg" class="galleryImg" alt="Germany's Bundestag">
-          </li>
-          <li class="galleryItem">
-            <img src="assets/pistache.jpg" class="galleryImg" alt="Ugly ass cat">
-          </li>
-          <li class="galleryItem">
-            <img src="assets/capi.jpg" class="galleryImg" alt="Beautiful Chad Cat">
-          </li>
-          <li class="galleryItem">
-            <img src="assets/arbre.jpg" class="galleryImg" alt="Green tree">
-          </li>
-          <li class="galleryItem">
-            <img src="assets/fleur.jpg" class="galleryImg" alt="blue flower">
-          </li>
-        </ul>
-        <h2 class="sectionSubtitle">
-          You can always explore more on my <a href="https://instagram.com/yann.drndt"
-            class="linkHoverEffect linkHoverEffectBlue"><b class="blue">Instagram</b></a>
-        </h2>
-      </div>
-    </div>
-  </section>
-  <footer>
-    <div class="container">
-      <div class="footerRow">
-        <a href="#" class="footerAnchor">
-          <figure class="footerLogo">
-            <img src="assets/logoYannDurandetDev+WhiteWithText.svg" class="footerLogoImg" alt="LOGO YD">
-          </figure>
-          <span class="footerLogoPopper">
-            Top
-            <i class="fas fa-arrow-up"></i>
-          </span>
-        </a>
-        <div class="footerSocialList">
-          <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank"
-            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Youtube</a>
-          <a href="https://instagram.com/yann.drndt" target="_blank"
-            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Instagram</a>
-          <a href="https://github.com/YannDurandet" target="_blank"
-            class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">GitHub</a>
-          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
-            class="  footerSocialLink linkHoverEffect linkHoverEffectWhite">LinkedIn</a>
+            </li>
+          </ul>
         </div>
-        <div class="footerCopyright">
-          Copyright &copy; 2022 Yann Durandet</div>
       </div>
-    </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous" defer async></script>
-  <script src="index.js" defer async></script>
-</body>
-
+    </section>
+    <section id="gallery">
+      <div class="container">
+        <div class="galleryRow">
+          <h1 class="sectionTitle">
+            This is my photography <span class="blue">gallery</span>
+          </h1>
+          <ul class="galleryLayout">
+            <li class="galleryItem">
+              <img src="assets/Frost.jpg" class="galleryImg" alt="snow flakes">
+            </li>
+            <li class="galleryItem">
+              <img src="assets/bundestag.jpg" class="galleryImg" alt="Germany's Bundestag">
+            </li>
+            <li class="galleryItem">
+              <img src="assets/pistache.jpg" class="galleryImg" alt="Ugly ass cat">
+            </li>
+            <li class="galleryItem">
+              <img src="assets/capi.jpg" class="galleryImg" alt="Beautiful Chad Cat">
+            </li>
+            <li class="galleryItem">
+              <img src="assets/arbre.jpg" class="galleryImg" alt="Green tree">
+            </li>
+            <li class="galleryItem">
+              <img src="assets/fleur.jpg" class="galleryImg" alt="blue flower">
+            </li>
+          </ul>
+          <h2 class="sectionSubtitle">
+            You can always explore more on my <a href="https://instagram.com/yann.drndt"
+              class="linkHoverEffect linkHoverEffectBlue"><b class="blue">Instagram</b></a>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footerRow">
+          <a href="#" class="footerAnchor">
+            <figure class="footerLogo">
+              <img src="assets/logoYannDurandetDev+WhiteWithText.svg" class="footerLogoImg" alt="LOGO YD">
+            </figure>
+            <span class="footerLogoPopper">
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footerSocialList">
+            <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank"
+              class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Youtube</a>
+            <a href="https://instagram.com/yann.drndt" target="_blank"
+              class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">Instagram</a>
+            <a href="https://github.com/YannDurandet" target="_blank"
+              class=" footerSocialLink linkHoverEffect linkHoverEffectWhite">GitHub</a>
+            <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank"
+              class="  footerSocialLink linkHoverEffect linkHoverEffectWhite">LinkedIn</a>
+          </div>
+          <div class="footerCopyright">
+            Copyright &copy; 2022 Yann Durandet</div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/3c2baa7ea7.js" crossorigin="anonymous" defer async></script>
+    <script src="index.js" defer async></script>
+  </body>
 </html>
