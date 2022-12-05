@@ -207,7 +207,6 @@ color: #f5f5f5;
   display: flex;
   position: relative;
   align-self: auto;
-  width: 25%;
   overflow-y: hidden;
   border-radius: 20px;
   box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
