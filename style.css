@@ -128,7 +128,9 @@ nav {
   margin: 0 auto;
   padding: 0 100px;
   height: 80px;
-  background-color: #00000007;
+  background-color: #FFF;
+  position:fixed;
+  z-index:1;
 }
 
 .navLinkButton {
