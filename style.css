@@ -499,6 +499,12 @@ footer {
   color: black;
 }
 
+.dark-theme #landingPage {
+  background: rgb(187,208,255);
+  background: linear-gradient(337deg, rgba(187,208,255,0.7299252464657738) 0%, rgba(185,126,255,0.7187207646730567) 50%, rgba(132,255,244,0.8083566190147934) 100%);
+
+}
+
 /*========================================LINK HOVER EFFECT========================================*/
 
 .linkHoverEffect {
