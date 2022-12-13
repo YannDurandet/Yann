@@ -7,47 +7,35 @@ function toggleContrast() {
     document.body.classList.remove("dark-theme")
   }
 }
+/* THIS SHIT DOESNT FUCKING WOOOOOOOOOORK
 
+}
+let langs = document.querySelector(".langs"),
+  link = document.querySelectorAll("a"),
+  title = document.querySelector(".title"),
+  descr = document.querySelector(".headerParagraph");
 
-var english = document.getElementById("en"),
-  french = document.getElementById("fr"),
-  change_text = document.getElementById("translate");
-// declare some variables to catch the various HTML elements
+link.forEach(el => {
+  el.addEventListener("click", () => {
+    langs.querySelector(".active").classList.remove("active");
+    el.classList.add("active");
 
-english.addEventListener("click", function () {
-  change(english, japanese, chinese);
-}, false
-);
+    let attr = el.getAttribute("language")
 
-// add an event listener to listen to when the user clicks on one of the language span tags
-// this triggers our custom "change" function, which we will define later
+    title.textContent = data[attr].title
+    descr.textContent = data[attr].description
+  })
+})
 
-french.addEventListener("click", function () {
-  change(french, english);
-}, false
-);
+let data = {
+  french: {
+    title: "Salut,",
+    description: "Je suis un développeur Web junior, vous pouvez lire plus ici à propos de moi."
+  },
+  english: {
+    title: "Hey,",
+    description: "I'm an aspiring French Front-End Web Developer, you can read more about me."
+  },
+}
 
-function change(lang_on, lang_off) {
-  if (!lang_on.classList.contains("current_lang")) {
-    // if the span that the user clicks on does not have the "current_lang" class
-    lang_on.classList.add("current_lang");
-    // add the "current_lang" class to it
-    lang_off1.classList.remove("current_lang");
-    // remove the "current_lang" class from the other span
-  }
-
-  if (lang_on.innerHTML == "EN") {
-    change_text.classList.add("english");
-    change_text.classList.remove("FRENCH");
-    change_text.innerHTML = "Text Not Translated";
-  }
-
-  else if (lang_on.innerHTML == "FR") {
-    change_text.classList.add("french");
-    // first line adds the corrent language class to the text
-    change_text.classList.remove("english");
-    // second line removes the other language classes
-    // this allows you to apply CSS that is specific to each language
-    change_text.innerHTML = "ALLONS ENFANTS DE LA PATRIEEEEEEEE";
-    // third line is where you key in the text that will replace what is currently on-screen
-  }
+*/

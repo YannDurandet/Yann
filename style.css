@@ -1,11 +1,10 @@
 /*========================================MAIN========================================*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 a {
@@ -18,6 +17,10 @@ button {
 
 html {
   scroll-behavior: smooth;
+}
+
+i{
+  transition: all 300ms ease;
 }
 
 img{
@@ -80,7 +83,6 @@ section {
 
 #landingPage {
   height: 100vh;
-  background: rgb(187,208,255);
   background: linear-gradient(337deg, rgba(187,208,255,0.7299252464657738) 0%, rgba(185,126,255,0.7187207646730567) 50%, rgba(132,255,244,0.8083566190147934) 100%);
 }
 
@@ -482,10 +484,13 @@ footer {
 .dark-theme .aboutParagraph {
   color: white;
 }
-.dark-theme nav,
 .dark-theme #about,
 .dark-theme #projects{
   background-color: black;
+}
+
+.dark-theme nav{
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .dark-theme section {
   background-color: #242424;
@@ -500,8 +505,7 @@ footer {
 }
 
 .dark-theme #landingPage {
-  background: rgb(187,208,255);
-  background: linear-gradient(337deg, rgba(187,208,255,0.7299252464657738) 0%, rgba(185,126,255,0.7187207646730567) 50%, rgba(132,255,244,0.8083566190147934) 100%);
+  background: linear-gradient(337deg, rgba(73, 131, 255, 0.73) 0%, rgba(143, 52, 255, 0.719) 50%,rgba(69, 255, 239, 0.808)) 100%);
 
 }
 
@@ -530,11 +534,11 @@ footer {
 }
 
 .linkHoverEffectBlue:after{
-  background-color:#EF652A;
+  background-color:#2965F1;
   height: 4px;
 }
 .linkHoverEffectBlueSmall:after{
-  background-color:#EF652A;
+  background-color:#2965F1;
   height: 2px;
 }
 
