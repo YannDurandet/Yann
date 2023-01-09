@@ -1,10 +1,10 @@
 /*========================================MAIN========================================*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   transition: all 300ms ease;
 }
 
@@ -85,8 +85,8 @@ nav {
   max-width:220vh;
   margin: 0 auto;
   padding: 0 100px;
-  height: 80px;
-  background-color: rgba(255, 255, 255, 0.5);
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(8px);
   position:fixed;
   z-index:1;
@@ -100,17 +100,8 @@ nav {
 }
 
 #personalLogo {
-  width: 180px;
-  height: 180px;
-margin-top: -7px;
-}
-
-.lightLogo{
-  display: block;
-}
-
-.darkLogo {
-  display: none;
+  width: 70px;
+  height: 70px;
 }
 
 .navLinkList {
@@ -124,7 +115,7 @@ margin-top: -7px;
 
 .navLinkAnchor {
   font-size: 18px;
-  color: #242424;
+  color: #fff;
   font-weight: 700;
 }
 
@@ -146,9 +137,11 @@ color: #f5f5f5;
 #landingPage {
   height: 100vh;
   overflow: hidden;
-  background-attachment:fixed;
-  background: rgb(72,242,245);
-  background: radial-gradient(circle, rgba(72,242,245,1) 0%, rgba(96,169,255,1) 100%); 
+  background-image: url(assets/farWestFinal.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  
 }
 
 .header {
@@ -264,13 +257,15 @@ color: #f5f5f5;
 /*========================================ABOUT========================================*/
 
 #about {
-  background-color: rgb(231, 231, 231);
+  background: rgb(69,47,59);
   height: 101vh;
 }
+
 .aboutLayout {
   display: flex;
   justify-content: center;
 }
+
 .aboutParagraphHolder{
   display: flex;
 }
@@ -298,57 +293,27 @@ color: #f5f5f5;
   max-width: 100%;
 }
 
-/*========================================SKILLS========================================*/
+/*========================================TRANSITION N°1========================================*/
 
-#skills{
-  padding-bottom: 30px;
+#firstTransition{
+  background-size: cover;
+  background-position: center;
+  padding: -1px 1px;
+  background: rgb(69,47,59);
+  background: linear-gradient(180deg, rgba(69,47,59,1) 48%, rgba(126,67,92,1) 52%); 
 }
-.skillImg {
+
+#firstTransImage{
   width: 100%;
-  max-width: 100px;
-  transition: all 300ms;
-}
-.skill:hover .skillImg {
-  transform: scale(0.8);
-}
-
-.skill {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-.skillImgHolder {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 16px;
-}
-
-.skillList {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.skillName {
-  position: absolute;
-  bottom: 0;
-  transform: scale(0);
-  transition: all 300ms;
-  font-size: 18px;
-  opacity: 0;
-}
-.skill:hover .skillName {
-  transform: scale(1);
-  opacity: 1;
+  overflow: hidden;
+  padding: -1px;
 }
 
 /*========================================PROJECTS========================================*/
 
 #projects {
-  background-color: rgb(231, 231, 231);
+  padding-top: 3px;
+  background-color: #7E435C;
   padding-bottom: 70px;
 }
 
@@ -363,7 +328,7 @@ color: #f5f5f5;
   text-align: center;
   font-size: 48px;
   margin-bottom: 40px;
-  padding-top: 80px;
+  padding-top: 0px;
 }
 
 .projectImg {
@@ -434,7 +399,8 @@ color: #f5f5f5;
   color: white;
   font-size: 20px;
   margin-right: 16px;
-}
+  background-color: rgb(69,47,59);
+} 
 
 .projectDescriptionParagraph {
   margin: 16px 0;
@@ -442,6 +408,7 @@ color: #f5f5f5;
 
 .projectDescriptionTags{
   background-color: white;
+  color: rgb(69,47,59);
   border-radius: 20px;
   padding: 1px 7px;
   margin-bottom: 4px;
@@ -449,7 +416,7 @@ color: #f5f5f5;
 
 .projectDescriptionTagsReversed{
   color: white;
-  background-color: #2965F1;
+  background-color: rgb(69,47,59);
   border-radius: 20px;
   padding: 1px 7px;
 }
@@ -458,6 +425,7 @@ color: #f5f5f5;
 
 #gallery {
   padding-bottom: 40px;
+  background-color: #E7345D;
 }
 
 .galleryRow {
@@ -585,48 +553,6 @@ footer {
   width: 100%;
 }
 
-/*========================================DARK THEME========================================*/
-
-.dark-theme .title,
-.dark-theme .sectionTitle,
-.dark-theme .sectionSubtitle,
-.dark-theme .navLinkAnchor,
-.dark-theme .fa-adjust,
-.dark-theme .headerParagraph,
-.dark-theme .sectionSubtitle,
-.dark-theme .skillName,
-.dark-theme .aboutParagraph {
-  color: white;
-}
-
-.dark-theme #about,
-.dark-theme #projects{
-  background-color: black;
-}
-
-.dark-theme nav{
-  background-color: rgba(128, 128, 128, 0.5);
-}
-.dark-theme section {
-  background-color: #242424;
-}
-
-.dark-theme #personalLogo {
-  filter: 1;
-}
-
-.dark-theme #landingPage {
-  background: linear-gradient(337deg, rgba(73, 131, 255, 0.73) 0%, rgba(143, 52, 255, 0.719) 50%,rgba(69, 255, 239, 0.808)) 100%;
-}
-
-.dark-theme .lightLogo{
-  display: none;
-}
-
-.dark-theme .darkLogo {
-  display: block;
-}
-
 /*========================================RESPONSIVE========================================*/
 
 @media (max-width: 768px) {
@@ -672,7 +598,7 @@ footer {
   .projectDescriptionParagraph {
     display: none;
   }
-  .project__description {
+  .projectDescription {
     left: 0;
     padding: 0;
     width: 100%;
@@ -681,45 +607,4 @@ footer {
   .projectDescriptionSubtitle {
     margin-bottom: 8px;
   }
-}
-
-/* Dark mode button test */
-
-#btnbox {   /* ITS THE BIG ASS WHITE BOX */
-	width: 76px;
-	margin: 5px 4px;
-	position: relative;
-	border-radius: 40px;
-	background: #fff;
-}
-
-.slideoff {
-  padding: 8px 0 8px 10.5px;
-}
-
-.slideon {
-  padding: 8px 0 8px 16px;
-}
-
-.toggle-btn { /* ITS THE FUCKING ICONS */
-	cursor: pointer;
-	background: transparent;
-	border: 0;
-	outline: none;
-	position: relative;
-	text-align: center;
-  font-size: 18px;
-  color: #242424;
-  font-weight: 700;
-}
-
-#btn { /* ITS THE UGLY ASS SLIDER */
-	left: 0;
-	top: 0;
-	position: absolute;
-	width: 40px;
-	height: 100%;
-	background: #2965F1;
-	border-radius: 20px;
-	transition: .25s;
 }
