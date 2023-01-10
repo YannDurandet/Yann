@@ -15,19 +15,21 @@
     <nav>
       <figure>
         <a href="#">
-          <img id="personalLogo" class="lightLogo" src="assets/shardy_heart_light_desert.svg" alt="LOGO YD">
+          <img id="personalLogo" class="lightLogo" src="assets/YDLogoWhiteInline.svg" alt="LOGO YD">
         </a>
       </figure>
       <ul class="navLinkList">
         <li class="navLink">
           <a href="#about" class=" navLinkAnchor linkHoverEffect linkHoverEffectWhite">About</a>
         </li>
+        <!--
         <li class="navLink">
-          <a href="#firstTransition" class=" navLinkAnchor linkHoverEffect linkHoverEffectWhite">Graphic Design</a>
+          <a href="#firstTransition" class=" navLinkAnchor linkHoverEffect linkHoverEffectWhite">Icy Heart Studios</a>
         </li>
         <li class="navLink">
-          <a href="#gallery" class="navLinkAnchor linkHoverEffect linkHoverEffectWhite">About</a>
+          <a href="#gallery" class="navLinkAnchor linkHoverEffect linkHoverEffectWhite">Web</a>
         </li>
+        -->
         <li class="navLink">
           <button class="navLinkButton">
             <a href="mailto:durandet.yann@gmail.com" class=" navLinkAnchor navLinkAnchorWhite click">Contact</a>
@@ -38,27 +40,56 @@
     <header class="header">
       <div class="headerContent">
         <h1 class="title">Yann Durandet</h1>
-        <p class="headerParagraph">Junior French Frontend Web Developer & Graphic Designer.</p>
-        <p class="headerParagraph">
-          You can read more <a href="#about" class="blue click linkHoverEffect linkHoverEffectBlue"><b>about me</b></a>.
-        </p>
+        <div class="headerParagraphHolder">
+          <p class="headerParagraph">Graphic Designer Founder of Iced Heart Studios & part-time front-end developer.</p>
+          <p class="headerParagraph">
+            You can read more <a href="#about" class="orange click linkHoverEffect linkHoverEffectOrange"><b>about
+                me</b></a>.
+          </p>
+        </div>
         <div class="socialList">
-          <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click"
-            id="socialLinkOne">
-            <i class="fab fa-youtube"></i>
-          </a>
-          <a href="https://instagram.com/yann.drndt" target="_blank" class="socialLink click" id="socialLinkTwo">
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a href="https://github.com/YannDurandet" target="_blank" class="socialLink click" id="socialLinkThree">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="socialLink click"
-            id="socialLinkFour">
-            <i class="fab fa-linkedin"></i>
+          <div class="socialLinkHolder">
+            <a href="https://www.youtube.com/channel/UCSiySRUGA1X9jnYcbmJttxw" target="_blank" class="socialLink click"
+              id="socialLinkOne">
+              <i class="fab fa-youtube"></i>
+              <p class="socialLinkName">
+                YouTube
+              </p>
+            </a>
+          </div>
+          <div class="socialLinkHolder">
+            <a href="https://instagram.com/yann.drndt" target="_blank" class="socialLink click" id="socialLinkTwo">
+              <i class="fab fa-instagram"></i>
+              <p class="socialLinkName">
+                Instagram
+              </p>
+            </a>
+          </div>
+          <div class="socialLinkHolder">
+            <a href="https://github.com/YannDurandet" target="_blank" class="socialLink click" id="socialLinkThree">
+              <i class="fab fa-github"></i>
+              <p class="socialLinkName">
+                GitHub
+              </p>
+            </a>
+          </div>
+          <div class="socialLinkHolder">
+            <a href="https://www.linkedin.com/in/yann-durandet-16472a252/" target="_blank" class="socialLink click"
+              id="socialLinkFour">
+              <i class="fab fa-linkedin"></i>
+              <p class="socialLinkName">
+                LinkedIn
+              </p>
+            </a>
+          </div>
+          <div class="socialLinkHolder">
             <a href="assets/cvYannDurandet.pdf" target="_blank" class="socialLink click" id="socialLinkFour">
               <i class="fa-regular fa-file"></i>
-            </a>
+              <p class="socialLinkName">
+                Resume
+              </p>
+            </a>  
+          </div>
         </div>
       </div>
     </header>
@@ -66,7 +97,7 @@
   <section id="about">
     <div class="container">
       <h2 class="sectionTitle">
-        Here's a bit more <span class="blue">about me</span>.
+        Here's a bit more <span class="orange">about me</span>.
       </h2>
       <div class="aboutLayout">
         <div class="aboutParagraphHolder">
@@ -85,24 +116,12 @@
     </div>
     </div>
   </section>
-
-
-
-  <section id="firstTransition">
-    <figure>
-      <div class='transitionContainer'>
-        <img src="assets/transitionLarge.svg" alt="transition" style="display: block;">
-      </div>
-    </figure>
-  </section>
-
-
-
+  <!--
   <section id="projects">
     <div class="container">
       <div class="row">
         <h1 class="sectionTitle">
-          Here are some of my <span class="blue">projects</span>
+          Here are some of my <span class="orange">projects</span>
         </h1>
         <ul class="projectList">
           <li class="project">
@@ -114,7 +133,7 @@
                   Yann Designs
                 </h2>
                 <h3 class="projectDescriptionSubtitle">
-                  <span class="blue projectDescriptionTags">HTML - CSS - JS</span>
+                  <span class="orange projectDescriptionTags">HTML - CSS - JS</span>
                 </h3>
                 <h3 class="projectDescriptionSubtitle">
                   <span class="projectDescriptionTagsReversed">Status : Finished</span>
@@ -148,7 +167,7 @@
     <div class="container">
       <div class="galleryRow">
         <h1 class="sectionTitle">
-          This is my photography <span class="blue">gallery</span>
+          This is my photography <span class="orange">gallery</span>
         </h1>
         <ul class="galleryLayout">
           <li class="galleryItem">
@@ -167,22 +186,23 @@
             <img src="assets/photo_gallery/arbre.jpg" class="galleryImg" alt="Green tree">
           </li>
           <li class="galleryItem">
-            <img src="assets/photo_gallery/fleur.jpg" class="galleryImg" alt="blue flower">
+            <img src="assets/photo_gallery/fleur.jpg" class="galleryImg" alt="blue flowers">
           </li>
         </ul>
         <h2 class="sectionSubtitle">
           You can always explore more on my <a href="https://instagram.com/yann.drndt" target="_blank"
-            class="linkHoverEffect linkHoverEffectBlue"><b class="blue">Instagram</b></a>
+            class="linkHoverEffect linkHoverEffectOrange"><b class="orange">Instagram</b></a>
         </h2>
       </div>
     </div>
   </section>
+  -->
   <footer>
     <div class="container">
       <div class="footerRow">
         <a href="#" class="footerAnchor">
           <figure class="footerLogo">
-            <img src="assets/shardy_heart_light_desert.svg" class="footerLogoImg" alt="LOGO YD">
+            <img src="assets/YDLogoWhiteInline.svg" class="footerLogoImg" alt="LOGO YD">
           </figure>
           <span class="footerLogoPopper">
             Top

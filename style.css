@@ -6,6 +6,8 @@
   box-sizing: border-box;
   font-family: 'Raleway', sans-serif;
   transition: all 300ms ease;
+  overflow-y: visible;
+  overflow-x: visible;
 }
 
 a {
@@ -16,6 +18,9 @@ button {
   cursor: pointer;
 }
 
+figure{
+  background-color: transparent;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -40,8 +45,8 @@ section {
 
 /*========================================MAIN CLASSES========================================*/
 
-.blue{
-  color: #2965F1;
+.orange{
+  color: #EB6768;
 }
 
 .container {
@@ -61,7 +66,7 @@ section {
 }
 
 .click:hover {
-  transform: scale(1.1);
+  filter: brightness(1.1);
 }
 
 .click:active {
@@ -69,7 +74,7 @@ section {
 }
 
 .title {
-  font-weight: 100;
+  font-weight: 300;
   font-size: 120px;
   margin-bottom: 12px;
   text-align: left;
@@ -94,15 +99,16 @@ nav {
 }
 
 .navLinkButton {
-  background-color: #2965F1;
+  background-color: #EB6768;
   border-radius: 20px;
   border: none;
   padding: 8px 18px;
 }
 
 #personalLogo {
-  width: 70px;
-  height: 70px;
+  width: 180px;
+  height: 180px;
+  margin-top: -7px;
 }
 
 .navLinkList {
@@ -124,15 +130,6 @@ nav {
 color: #f5f5f5;
 }
 
-.navLinkBlue {
-  font-size: 16px;
-  color: #2965F1;
-  font-weight: 700;
-}
-.fa-adjust {
-  font-size: 20px;
-}
-
 /*========================================HEADER========================================*/
 
 #landingPage {
@@ -152,7 +149,16 @@ color: #f5f5f5;
   transform: translate(-50%, -50%);
   width: 100%;
   max-width: 1000px;
-  padding: 0 0px;
+  padding: 0 0;
+}
+
+.headerParagraphHolder{
+  background-color: #f5f5f566;
+  width: fit-content;
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid white;
+  backdrop-filter: blur(8px);
 }
 
 .headerParagraph {
@@ -168,18 +174,36 @@ color: #f5f5f5;
 }
 
 .socialLink {
-  background-color: #2965F1;
+  background-color: #EB6768;
   color: white;
   padding: 2px;
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   font-size: 18px;
   margin-right: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  border-radius: 20px;
+  align-items: left;
 }
+
+.socialLinkName{
+  display: none;
+  padding-left: 4px;
+}
+
+
+.socialLink:hover{
+  width: fit-content;
+  padding: 0 8px;
+}
+
+.socialLink:hover .socialLinkName{
+  display: block;
+}
+
+
 
 .title{
   animation: title-appears 2000ms 0ms ease;
@@ -292,21 +316,6 @@ color: #f5f5f5;
 
 .aboutImg {
   max-width: 100%;
-}
-
-/*========================================TRANSITION N°1========================================*/
-
-.transitionContainer{
-  position: relative;
-}
-
-.transitionContainer:before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
 }
 
 /*========================================PROJECTS========================================*/
@@ -478,8 +487,8 @@ footer {
 }
 
 .footerLogoImg {
-  width: 120px;
-  padding: 30px 0;
+  width: 240px;
+  padding: 0;
 }
 
 .footerSocialList {
@@ -540,13 +549,9 @@ footer {
   background-color: #242424;
 }
 
-.linkHoverEffectBlue:after{
-  background-color:#2965F1;
+.linkHoverEffectOrange:after{
+  background-color:#EB6768;
   height: 4px;
-}
-.linkHoverEffectBlueSmall:after{
-  background-color:#2965F1;
-  height: 2px;
 }
 
 .linkHoverEffect:hover:after {
