@@ -69,6 +69,7 @@ section {
 }
 
 .title {
+  font-weight: 100;
   font-size: 120px;
   margin-bottom: 12px;
   text-align: left;
@@ -295,18 +296,17 @@ color: #f5f5f5;
 
 /*========================================TRANSITION N°1========================================*/
 
-#firstTransition{
-  background-size: cover;
-  background-position: center;
-  padding: -1px 1px;
-  background: rgb(69,47,59);
-  background: linear-gradient(180deg, rgba(69,47,59,1) 48%, rgba(126,67,92,1) 52%); 
+.transitionContainer{
+  position: relative;
 }
 
-#firstTransImage{
+.transitionContainer:before {
+  content: '';
+  position: absolute;
   width: 100%;
-  overflow: hidden;
-  padding: -1px;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 /*========================================PROJECTS========================================*/
@@ -425,7 +425,7 @@ color: #f5f5f5;
 
 #gallery {
   padding-bottom: 40px;
-  background-color: #E7345D;
+  background-color: #B8416D;
 }
 
 .galleryRow {
@@ -478,7 +478,8 @@ footer {
 }
 
 .footerLogoImg {
-  width: 240px;
+  width: 120px;
+  padding: 30px 0;
 }
 
 .footerSocialList {
